@@ -1,15 +1,27 @@
 import React, { Component } from "react";
 import FlipMove from 'react-flip-move';
+import SelectionStore from './SelectionStore';
  
 class TodoItems extends Component {
   constructor(props, context) {
     super(props, context);
- 
+    this.state = { 
+      selections: []
+    };
     this.createTasks = this.createTasks.bind(this);
   }
 
+  componentDidMount() {
+    SelectionStore.getAll().then((data) => {
+      console.log('get all', data);
+      this.setState({
+        selections: data.selections
+      });
+    });
+  }
+
   delete(key) {
-    this.props.delete(key);
+    SelectionStore.remove(key);
   }
  
   createTasks(item) {
@@ -18,8 +30,8 @@ class TodoItems extends Component {
   }
  
   render() {
-    var todoEntries = this.props.entries;
-    var listItems = todoEntries.map(this.createTasks);
+    var selections = this.state.selections;
+    var listItems = selections.map(this.createTasks);
  
     return (
       <ul className="theList">

@@ -7,7 +7,7 @@
 .todoListMain .header button {
   width: 80%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 30px;
   margin: 10px;
   margin-right: 0px;
   background-color: #0066FF;
@@ -44,6 +44,6 @@
   margin: 20px 0;
 }
 
-.todoListMain .pretty .state label{
-  font-size: 30px;
+.todoListMain .pretty .state{
+  font-size: 35px;
 }

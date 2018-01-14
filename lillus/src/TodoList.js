@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TodoItems from "./TodoItems";
 import CheckBoxList from "./CheckBoxList";
+import SelectionStore from './SelectionStore';
 import "./TodoList.css";
  
 class TodoList extends Component {
@@ -18,20 +19,12 @@ class TodoList extends Component {
   }
 
   addItem(e) {
-    var itemArray = this.state.items;
     var selectedNames = this.state.selectedNames;
 
     selectedNames.forEach(name => {
-      itemArray.unshift({
-        text: name,
-        key: Date.now() + name
-      });
-    });
-    this.setState({
-      items: itemArray
+      SelectionStore.add(name);
     });
 
-    console.log(itemArray);
     this.refs.chkboxList.reset();
     e.preventDefault();
   }

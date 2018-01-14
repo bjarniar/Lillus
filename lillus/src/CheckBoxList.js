@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./pretty-checkbox.min.css";
-import "./materialdesignicons.min.css";
+import "./lib/pretty-checkbox.min.css";
+import "./lib/mdi/css/materialdesignicons.min.css";
 
 class CheckBoxList extends Component {
 
@@ -67,7 +67,8 @@ class CheckBoxList extends Component {
         <div key={'chk-' + index} className="pretty p-icon p-round p-tada">
           <input type="checkbox" 
                   value={item.value}
-                  onChange={this.handleItemChange}/>
+                  onChange={this.handleItemChange}
+                  checked={item.checked ? true : false}/>
           <div className="state p-primary-o">
             <i class="icon mdi mdi-heart"></i>
             <label>{item.label}</label>
