@@ -9,13 +9,21 @@ class TodoList extends Component {
     super(props, context);
  
     this.state = {
+      user: '',
       items: [],
       selectedNames: []
     };
 
+    this.login = this.login.bind(this);
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.changeSelection = this.changeSelection.bind(this);
+  }
+
+  login(e) {
+    this.setState({
+      user: "bjarni"
+    });
   }
 
   addItem(e) {
@@ -45,7 +53,7 @@ class TodoList extends Component {
     });
   }
 
-  render() {
+  renderSelection() {
     return (
       <div className="todoListMain">
         <div>
@@ -60,6 +68,21 @@ class TodoList extends Component {
                     delete={this.deleteItem}/>
       </div>
     );
+  }
+
+  renderLogin() {
+    return (
+      <div className="login">
+        <form onSubmit={this.login}>
+          Username: <input type="text" name="username"></input>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    )
+  }
+
+  render() {
+    return this.state.user ? this.renderSelection() : this.renderLogin();
   }
 }
  
