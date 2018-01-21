@@ -26,8 +26,8 @@ server.get('/selections', function(req, res, next) {
 });
 
 server.post('/selections', function(req, res, next) {
-  var todo = req.body;
-  database.add(todo, function(selections) {
+  var selectedNames = req.body;
+  database.add(selectedNames, function(selections) {
     res.send(selections);
     next();
   });
@@ -38,6 +38,13 @@ server.delete('/selections/:id', function(req, res, next) {
   
   database.del(id, function(selections) {
     res.send(selections);
+    next();
+  });
+});
+
+server.get('/selections/fetchNew', function(req, res, next) {
+  database.fetchNewNames(function(names) {
+    res.send(names);
     next();
   });
 });

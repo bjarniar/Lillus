@@ -3,7 +3,7 @@ import TodoItems from "./TodoItems";
 import CheckBoxList from "./CheckBoxList";
 import SelectionStore from './SelectionStore';
 import "./TodoList.css";
- 
+
 class TodoList extends Component {
   constructor(props, context) {
     super(props, context);
@@ -21,9 +21,9 @@ class TodoList extends Component {
   addItem(e) {
     var selectedNames = this.state.selectedNames;
 
-    selectedNames.forEach(name => {
-      SelectionStore.add(name);
-    });
+    if (selectedNames.length > 1) {
+      SelectionStore.add(selectedNames);
+    }
 
     this.refs.chkboxList.reset();
     e.preventDefault();
@@ -46,18 +46,10 @@ class TodoList extends Component {
   }
 
   render() {
-    var data = [
-      {value: 'Bjarni', label: 'Bjarni'},
-      {value: 'Magnús', label: 'Magnús'},
-      {value: 'Gísli', label: 'Gísli'},
-      {value: 'Kristján', label: 'Kristján'},
-      {value: 'Daníel', label: 'Daníel'},
-      {value: 'Davíð', label: 'Davíð'}
-    ];
     return (
       <div className="todoListMain">
         <div>
-          <CheckBoxList ref="chkboxList" defaultData={data} onChange={this.changeSelection} />
+          <CheckBoxList ref="chkboxList" onChange={this.changeSelection} />
         </div>
         <div className="header">
           <form onSubmit={this.addItem}>

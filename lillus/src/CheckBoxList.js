@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SelectionStore from './SelectionStore';
 import "./lib/pretty-checkbox.min.css";
 import "./lib/mdi/css/materialdesignicons.min.css";
 
@@ -13,6 +14,11 @@ class CheckBoxList extends Component {
 
     this.handleItemChange = this.handleItemChange.bind(this);
     this.reset = this.reset.bind(this);
+  }
+
+  componentDidMount() {
+    SelectionStore.fetchNewNames()
+      .then(res => this.setState({ data: res }) )
   }
 
 	handleItemChange(e) {
@@ -36,19 +42,13 @@ class CheckBoxList extends Component {
 		}
 	}
 
-	// uncheck all items in the list
-	reset() {
-		var newData = [];
-		this.state.data.forEach(function(item) {
-			item.checked = false;
-			newData.push(item);
-		});
-
-		this.setState({data: newData});
+	reset(newData) {
+    SelectionStore.fetchNewNames()
+      .then(res => this.setState({ data: res }) )
 	}
 
-	render() {
-		var options;
+  renderNames() {
+    var options;
 
 		options = this.state.data.map(function(item, index) {
 			/*return (
@@ -70,8 +70,8 @@ class CheckBoxList extends Component {
                   onChange={this.handleItemChange}
                   checked={item.checked ? true : false}/>
           <div className="state p-primary-o">
-            <i class="icon mdi mdi-heart"></i>
-            <label>{item.label}</label>
+            <i className="icon mdi mdi-heart"></i>
+            <label>{item.value}</label>
           </div>
         </div>
       )
@@ -82,6 +82,12 @@ class CheckBoxList extends Component {
 				options
 			)
 		);
+  }
+
+	render() {
+		return this.state.data.length > 1 ? this.renderNames() : (
+      <span>Loading names...</span>
+    )
 	}
 };
 

@@ -28,7 +28,7 @@ function remove(selection) {
   });
 }
 
-function add(selection) {
+function add(selectedNamesArray) {
   return new Promise((resolve, reject) => {
     $.ajax({
       url: `${URL}`,
@@ -40,7 +40,19 @@ function add(selection) {
       dataType: 'json',
       success: resolve,
       error: reject,
-      data: JSON.stringify(selection)
+      data: JSON.stringify(selectedNamesArray)
+    });
+  });
+}
+
+function fetchNewNames() {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      url: `${URL}/fetchNew`,
+      method: 'GET',
+      dataType: 'json',
+      success: resolve,
+      error: reject
     });
   });
 }
@@ -52,14 +64,18 @@ class SelectionStore {
     this.subscribers = [];
   }
   
-  add(SelectionText) {
-    this.idCount++;
-    let selection = new SelectionData(SelectionText, this.idCount);
+  add(selectedNames) {
+    let selectedNamesArray = [];
+    selectedNames.forEach(name => {
+      this.idCount++;
+      let selection = new SelectionData(name, this.idCount);
+      selectedNamesArray.push(selection);
+    });
     
-    add(selection).then(() => {
+    add(selectedNamesArray).then(() => {
       this.publish({
         actionType: 'add',
-        data: selection
+        data: selectedNamesArray
       });
     });
      
@@ -76,7 +92,11 @@ class SelectionStore {
   }
   
   getAll() {
-      return getAll();
+    return getAll();
+  }
+
+  fetchNewNames() {
+    return fetchNewNames();
   }
   
   publish(action) {

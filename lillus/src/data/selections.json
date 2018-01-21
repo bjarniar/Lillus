@@ -1,29 +1,59 @@
 {
     "selections": [
         {
-            "text": "Daníel",
-            "timestamp": "1/14/2018",
+            "text": "Hallgils",
+            "timestamp": "1/21/2018",
+            "id": 27
+        },
+        {
+            "text": "Gabríel",
+            "timestamp": "1/21/2018",
+            "id": 28
+        },
+        {
+            "text": "Ásgrímur",
+            "timestamp": "1/21/2018",
+            "id": 29
+        },
+        {
+            "text": "Ísrael",
+            "timestamp": "1/21/2018",
+            "id": 11
+        },
+        {
+            "text": "Nóni",
+            "timestamp": "1/21/2018",
             "id": 12
         },
         {
-            "text": "Davíð",
-            "timestamp": "1/14/2018",
+            "text": "Sandri",
+            "timestamp": "1/21/2018",
+            "id": 13
+        },
+        {
+            "text": "Ásbjörn",
+            "timestamp": "1/21/2018",
             "id": 14
         },
         {
-            "text": "Magnús",
-            "timestamp": "1/14/2018",
+            "text": "Manfreð",
+            "timestamp": "1/21/2018",
             "id": 15
         },
         {
-            "text": "Gísli",
-            "timestamp": "1/14/2018",
+            "text": "Rósenberg",
+            "timestamp": "1/21/2018",
             "id": 16
         },
         {
-            "text": "Davíð",
-            "timestamp": "1/14/2018",
-            "id": 19
+            "text": "Muggur",
+            "timestamp": "1/21/2018",
+            "id": 17
+        },
+        {
+            "text": "Freybjörn",
+            "timestamp": "1/21/2018",
+            "id": 18
         }
     ]
 }

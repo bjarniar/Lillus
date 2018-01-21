@@ -21,3 +21,6 @@ lillus/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lillus/src/data/selections.json
+lillus/src/data/test.txt
+test.js

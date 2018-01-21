@@ -21,6 +21,7 @@ class TodoItems extends Component {
   }
 
   delete(key) {
+    console.log(key);
     SelectionStore.remove(key);
   }
  
