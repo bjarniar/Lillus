@@ -8,7 +8,8 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/lillus\\src\\server\\server.js"
+      "program": "${workspaceFolder}/lillus\\src\\server\\server.js",
+      "localRoot": "${workspaceFolder}"
     }
   ]
 }

@@ -1,0 +1,589 @@
+{
+    "selections": [
+        {
+            "text": "Þormar",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Sigurlaugur",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Berg",
+            "timestamp": "2/20/2018",
+            "id": 13
+        },
+        {
+            "text": "Þrándur",
+            "timestamp": "2/20/2018",
+            "id": 14
+        },
+        {
+            "text": "Sigurmundur",
+            "timestamp": "2/20/2018",
+            "id": 15
+        },
+        {
+            "text": "Ebeneser",
+            "timestamp": "2/20/2018",
+            "id": 16
+        },
+        {
+            "text": "Kjallakur",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Elli",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Heiðar",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Guðbjörn",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Snæbjartur",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Amos",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Hjarnar",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Sturla",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Manúel",
+            "timestamp": "2/20/2018",
+            "id": 13
+        },
+        {
+            "text": "Kristofer",
+            "timestamp": "2/20/2018",
+            "id": 14
+        },
+        {
+            "text": "Sigfastur",
+            "timestamp": "2/20/2018",
+            "id": 15
+        },
+        {
+            "text": "Vagn",
+            "timestamp": "2/20/2018",
+            "id": 16
+        },
+        {
+            "text": "Anthony",
+            "timestamp": "2/20/2018",
+            "id": 17
+        },
+        {
+            "text": "Vatnar",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Hálfdan",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Matthías",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Hárlaugur",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Bernharður",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Snævar",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Steinþór",
+            "timestamp": "2/20/2018",
+            "id": 13
+        },
+        {
+            "text": "Árni",
+            "timestamp": "2/20/2018",
+            "id": 14
+        },
+        {
+            "text": "Ríkharður",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Sveinberg",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Geirmundur",
+            "timestamp": "2/20/2018",
+            "id": 13
+        },
+        {
+            "text": "Elínbergur",
+            "timestamp": "2/20/2018",
+            "id": 14
+        },
+        {
+            "text": "Eðvald",
+            "timestamp": "2/20/2018",
+            "id": 15
+        },
+        {
+            "text": "Bergmundur",
+            "timestamp": "2/20/2018",
+            "id": 16
+        },
+        {
+            "text": "Guðröður",
+            "timestamp": "2/20/2018",
+            "id": 17
+        },
+        {
+            "text": "Julian",
+            "timestamp": "2/20/2018",
+            "id": 18
+        },
+        {
+            "text": "Valdimar",
+            "timestamp": "2/20/2018",
+            "id": 19
+        },
+        {
+            "text": "Randver",
+            "timestamp": "2/20/2018",
+            "id": 20
+        },
+        {
+            "text": "Estefan",
+            "timestamp": "2/20/2018",
+            "id": 11
+        },
+        {
+            "text": "Rósant",
+            "timestamp": "2/20/2018",
+            "id": 12
+        },
+        {
+            "text": "Þyrnir",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Jómundur",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Sigsteinn",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Vífill",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Bessi",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Sigursteinn",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Atlas",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Ögmundur",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Reginn",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Þorgarður",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Falgeir",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Hólmgeir",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Sigurleifur",
+            "timestamp": "2/23/2018",
+            "id": 13
+        },
+        {
+            "text": "Aðalráður",
+            "timestamp": "2/23/2018",
+            "id": 14
+        },
+        {
+            "text": "Annes",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Friðlaugur",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Ferdinand",
+            "timestamp": "2/23/2018",
+            "id": 13
+        },
+        {
+            "text": "Júrek",
+            "timestamp": "2/23/2018",
+            "id": 14
+        },
+        {
+            "text": "Nils",
+            "timestamp": "2/23/2018",
+            "id": 15
+        },
+        {
+            "text": "Þráinn",
+            "timestamp": "2/23/2018",
+            "id": 16
+        },
+        {
+            "text": "Gautviður",
+            "timestamp": "23/02/2018",
+            "id": 11
+        },
+        {
+            "text": "Márus",
+            "timestamp": "23/02/2018",
+            "id": 12
+        },
+        {
+            "text": "Vestar",
+            "timestamp": "23/02/2018",
+            "id": 13
+        },
+        {
+            "text": "Svavar",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Ármann",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Tímóteus",
+            "timestamp": "2/23/2018",
+            "id": 13
+        },
+        {
+            "text": "Bjargar",
+            "timestamp": "2/23/2018",
+            "id": 14
+        },
+        {
+            "text": "Maron",
+            "timestamp": "2/23/2018",
+            "id": 15
+        },
+        {
+            "text": "Ás",
+            "timestamp": "2/23/2018",
+            "id": 16
+        },
+        {
+            "text": "Hersteinn",
+            "timestamp": "23/02/2018",
+            "id": 11
+        },
+        {
+            "text": "Júlí",
+            "timestamp": "23/02/2018",
+            "id": 12
+        },
+        {
+            "text": "Hallgils",
+            "timestamp": "23/02/2018",
+            "id": 13
+        },
+        {
+            "text": "Heinrekur",
+            "timestamp": "23/02/2018",
+            "id": 14
+        },
+        {
+            "text": "Finnjón",
+            "timestamp": "23/02/2018",
+            "id": 15
+        },
+        {
+            "text": "Gneisti",
+            "timestamp": "23/02/2018",
+            "id": 16
+        },
+        {
+            "text": "Guðni",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Jónmundur",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Guttormur",
+            "timestamp": "2/23/2018",
+            "id": 13
+        },
+        {
+            "text": "Ásbjörn",
+            "timestamp": "2/23/2018",
+            "id": 14
+        },
+        {
+            "text": "Þorsteinn",
+            "timestamp": "2/23/2018",
+            "id": 15
+        },
+        {
+            "text": "Ölver",
+            "timestamp": "2/23/2018",
+            "id": 16
+        },
+        {
+            "text": "Melkólmur",
+            "timestamp": "2/23/2018",
+            "id": 17
+        },
+        {
+            "text": "Sigurbjörn",
+            "timestamp": "2/23/2018",
+            "id": 18
+        },
+        {
+            "text": "Dalmar",
+            "timestamp": "2/23/2018",
+            "id": 19
+        },
+        {
+            "text": "Sigurdór",
+            "timestamp": "2/23/2018",
+            "id": 20
+        },
+        {
+            "text": "Þorvaldur",
+            "timestamp": "2/23/2018",
+            "id": 21
+        },
+        {
+            "text": "Melkíor",
+            "timestamp": "2/23/2018",
+            "id": 22
+        },
+        {
+            "text": "Snælaugur",
+            "timestamp": "2/23/2018",
+            "id": 23
+        },
+        {
+            "text": "Martin",
+            "timestamp": "2/23/2018",
+            "id": 24
+        },
+        {
+            "text": "Heinrekur",
+            "timestamp": "23/02/2018",
+            "id": 17
+        },
+        {
+            "text": "Finnjón",
+            "timestamp": "23/02/2018",
+            "id": 18
+        },
+        {
+            "text": "Gneisti",
+            "timestamp": "23/02/2018",
+            "id": 19
+        },
+        {
+            "text": "Heinrekur",
+            "timestamp": "23/02/2018",
+            "id": 20
+        },
+        {
+            "text": "Finnjón",
+            "timestamp": "23/02/2018",
+            "id": 21
+        },
+        {
+            "text": "Gneisti",
+            "timestamp": "23/02/2018",
+            "id": 22
+        },
+        {
+            "text": "Heinrekur",
+            "timestamp": "23/02/2018",
+            "id": 23
+        },
+        {
+            "text": "Finnjón",
+            "timestamp": "23/02/2018",
+            "id": 24
+        },
+        {
+            "text": "Gneisti",
+            "timestamp": "23/02/2018",
+            "id": 25
+        },
+        {
+            "text": "Heinrekur",
+            "timestamp": "23/02/2018",
+            "id": 26
+        },
+        {
+            "text": "Finnjón",
+            "timestamp": "23/02/2018",
+            "id": 27
+        },
+        {
+            "text": "Gneisti",
+            "timestamp": "23/02/2018",
+            "id": 28
+        },
+        {
+            "text": "Heinrekur",
+            "timestamp": "23/02/2018",
+            "id": 29
+        },
+        {
+            "text": "Finnjón",
+            "timestamp": "23/02/2018",
+            "id": 30
+        },
+        {
+            "text": "Gneisti",
+            "timestamp": "23/02/2018",
+            "id": 31
+        },
+        {
+            "text": "Þorbrandur",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Ásgrímur",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Logi",
+            "timestamp": "2/23/2018",
+            "id": 13
+        },
+        {
+            "text": "Arndór",
+            "timestamp": "2/23/2018",
+            "id": 14
+        },
+        {
+            "text": "Bjartmann",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Snjóki",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Brynþór",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Þórólfur",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Oliver",
+            "timestamp": "2/23/2018",
+            "id": 13
+        },
+        {
+            "text": "Ími",
+            "timestamp": "2/23/2018",
+            "id": 14
+        },
+        {
+            "text": "Bergsteinn",
+            "timestamp": "2/23/2018",
+            "id": 11
+        },
+        {
+            "text": "Snorri",
+            "timestamp": "2/23/2018",
+            "id": 12
+        },
+        {
+            "text": "Veturliði",
+            "timestamp": "2/23/2018",
+            "id": 13
+        },
+        {
+            "text": "Gils",
+            "timestamp": "2/23/2018",
+            "id": 14
+        }
+    ]
+}

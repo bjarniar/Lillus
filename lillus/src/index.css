@@ -1,9 +1,9 @@
 body {
-  padding: 50px;
   background-color: rgb(224, 238, 245);
   font-family: sans-serif;
+  display: flex;
 }
 #container {
   display: flex;
-  justify-content: center;
+  margin: auto;
 }

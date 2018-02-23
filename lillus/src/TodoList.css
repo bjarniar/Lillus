@@ -1,23 +1,96 @@
-.todoListMain .header input {
+.BJ-buttons {
+  width: 250px;
+}
+
+.BJ-buttons .bjarni-login {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.BJ-buttons .user-button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100%;
+}
+
+.BJ-buttons .user-button:hover {background-color: #3e8e41}
+
+.BJ-buttons .user-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.todoListMain input {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #FFF;
   width: 165px;
 }
-.todoListMain .header button {
-  width: 80%;
-  padding: 10px;
-  font-size: 30px;
-  margin: 10px;
-  margin-right: 0px;
-  background-color: #0066FF;
-  color: #FFF;
-  border: 2px solid #0066FF;
+.todoListMain .nameList {
+  margin-left: 15px;
 }
-.todoListMain .header button:hover {
-  background-color: #003399;
-  border: 2px solid #003399;
+.todoListMain .confirm button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 35px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0066FF;
+  border: 2px solid rgba(0, 102, 255, 0.151);
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 250px;
+}
+.todoListMain .confirm button:hover {
+  background-color: #0066FF;
+  border: 2px solid #0066FF;
+  cursor: pointer;
+}
+.todoListMain .confirm button:active {
+  background-color: #0066FF;
+  border: 2px solid #0066FF;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.todoListMain .proceed button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(5, 204, 38);
+  border: 2px solid rgba(30, 207, 7, 0.589);
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 250px;
+}
+.todoListMain .proceed button:hover {
+  background-color: rgb(5, 204, 38);
+  border: 2px solid rgb(5, 204, 38);
+  cursor: pointer;
+}
+.todoListMain .proceed button:active {
+  background-color: rgb(5, 204, 38);
+  border: 2px solid rgb(5, 204, 38);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .todoListMain .theList {
   list-style: none;
@@ -41,9 +114,13 @@
 
 .todoListMain .pretty {
   display: block;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .todoListMain .pretty .state{
   font-size: 35px;
+}
+
+.todoListMain .pretty .greyed {
+  opacity: 0.3;
 }

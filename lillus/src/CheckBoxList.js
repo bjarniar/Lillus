@@ -9,6 +9,8 @@ class CheckBoxList extends Component {
     super(props, context);
  
     this.state = {
+      activeUser: this.props.activeUser,
+      confirmedSelections: this.props.confirmedSelections,
       data: this.props.defaultData || []
     };
 
@@ -17,7 +19,7 @@ class CheckBoxList extends Component {
   }
 
   componentDidMount() {
-    SelectionStore.fetchNewNames()
+    SelectionStore.fetchNewNames(this.state.activeUser)
       .then(res => this.setState({ data: res }) )
   }
 
@@ -43,38 +45,44 @@ class CheckBoxList extends Component {
 	}
 
 	reset(newData) {
-    SelectionStore.fetchNewNames()
+    SelectionStore.fetchNewNames(this.state.activeUser)
       .then(res => this.setState({ data: res }) )
-	}
+  }
+  
+  renderSelection(item, index) {
+    return (
+      <div key={'chk-' + index} className="pretty p-icon p-round p-tada">
+        <input type="checkbox" 
+                value={item.value}
+                onChange={this.handleItemChange}
+                checked={item.checked ? true : false}/>
+        <div className="state p-primary-o">
+          <i className="icon mdi mdi-heart"></i>
+          <label>{item.value}</label>
+        </div>
+      </div>
+    )
+  }
+
+  renderConfirmed(item, index) {
+    return (
+      <div key={'chk-' + index} className="pretty p-icon p-round p-tada">
+        <input type="checkbox" 
+                value={item.value}
+                checked={item.checked ? true : false}/>
+        <div className={"state p-primary-o" + (item.checked ? "" : " greyed")}>
+          <i className="icon mdi mdi-check-circle"></i>
+          <label disabled={!item.checked}>{item.value}</label>
+        </div>
+      </div>
+    )
+  }
 
   renderNames() {
     var options;
 
 		options = this.state.data.map(function(item, index) {
-			/*return (
-				React.createElement("div", {key: 'chk-' + index, className: "checkbox"}, 
-					React.createElement("label", null, 
-						React.createElement("input", {
-              className: "state p-primary-o",
-							type: "checkbox", 
-							value: item.value, 
-							onChange: this.handleItemChange, 
-							checked: item.checked ? true : false}), " ", item.label
-					)
-        )
-      );*/
-      return (
-        <div key={'chk-' + index} className="pretty p-icon p-round p-tada">
-          <input type="checkbox" 
-                  value={item.value}
-                  onChange={this.handleItemChange}
-                  checked={item.checked ? true : false}/>
-          <div className="state p-primary-o">
-            <i className="icon mdi mdi-heart"></i>
-            <label>{item.value}</label>
-          </div>
-        </div>
-      )
+      return this.props.confirmedSelections ? this.renderConfirmed(item, index) : this.renderSelection(item, index)
 		}.bind(this));
 
 		return (
